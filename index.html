@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BookLib</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>BookLib</h1>
+    </div>
+
+        <div class="container">
+            <div class="book-container">
+                <h2>Richy Rich Book</h2>
+                <h5>Venky</h5>
+                <p>The magical adventures of a young boy named Venky who discovers he is a wizard and attends Hogwarts School.</p>
+                <button onclick="deletebook(event)">Delete</button>
+            </div>
+
+        </div>
+
+    
+
+    <div class="popup-overlay"></div>
+
+    <div class="popup-box">
+        <h2>Add Book</h2>
+            <form>
+                <input type="text" placeholder="Book Title" id="book-title-input">
+                <input type="text" placeholder="Book Author" id="book-author-input">
+                <textarea placeholder="Short Description" id="book-description-input"></textarea>
+                <button id="add-book">ADD</button>
+                <button id="cancel-popup">CANCEL</button>
+            </form>
+
+    </div>
+
+
+    <button class="add-button" id="add-popup-button">+</button>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
